@@ -1,0 +1,15 @@
+.bg-image {
+    background-image: url('../../assets/blackboard.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    min-height: 400px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #dedede;
+    min-height: 75px;
+    width: 100%;
+}
