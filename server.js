@@ -8,10 +8,12 @@ function requireHTTPS(req, res, next) {
 const express = require('express');
 const app = express();
 app.use(requireHTTPS);
-app.use(express.static('./dist/<tutorials>'));
+app.use(express.static('./dist/tutorials'));
 app.get('/*', function(req, res) {
-    res.sendFile('index.html', {root: 'dist/<tutorials>/'}
+    res.sendFile('index.html', {root: 'dist/tutorials/index.html'}
   );
   });
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080,()=>{
+    console.log('server is listening on 8070')
+});
 
